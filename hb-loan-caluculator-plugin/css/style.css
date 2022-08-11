@@ -1,0 +1,67 @@
+/* 
+
+a header section with following text:
+
+Loan Calculator
+Fill the loan amount, interest rate, and loan term and it will automatically calculate monthly payment, total interest, and total principal and interest amount
+
+*/
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+}
+
+/* target a class within a class  */
+.left .form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.right {
+    flex: 1;
+}
+
+.right .banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.hb-loan-calculator.com/wp-content/uploads/2019/05/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right .banner .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
