@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script><!--  Loads After the Page -->
+</head>
+<body>
+    <div class="lc-container">
+        <div class="lc-header">
+            <div class="hdr-left">
+                    <h1 class="title gradient-text">Loan Calculator</h1>
+                    <p class="description">
+                        Fill the loan amount, interest rate, and loan term and it will 
+                        automatically calculate monthly payment, total interest, and total 
+                        principal and interest amount
+                    </p>
+            </div>
+            <div class="hdr-right">
+            </div>
+        </div>
+        
+        <div class="lc-calculator"> 
+            <div class="cal-left">                
+                <div class="inputs">
+                    <div class="group">
+                        <label for="" class="label">Loan Amount <span class="red">*</span></label>
+                        <input type="text" class="input" name="loan-amount" id="loan-amount" value="500,000 Br">
+                    </div>
+                    <div class="group">
+                        <label for="" class="label">Interest Rate <span class="red">*</span></label>
+                        <input type="text" class="input" name="interest-rate" id="interest-rate" value="15%">
+                    </div>
+                    <div class="group">
+                        <label for="" class="label">Loan Term in Months<span class="red">*</span></label>
+                        <input type="text" class="input" name="loan-term" id="loan-term" value="60">
+                    </div>
+                </div>        
+            </div>
+            <div class="cal-right">
+                <div class="results">
+                    <div class="top">
+                        <h1 class="top-title">Monthly Payment</h1>
+                        <p class="top-amount gradient-text">11,894.97 Br</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="bt-left">
+                            <p class="bt-label">Total Interest</p>
+                            <p class="bt-amount">1,895.97 Br</p>
+                        </div>
+                        <div class="bt-right">
+                            <p class="bt-label">Total Principal & Interests</p>
+                            <p class="bt-amount">500,000 Br</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
