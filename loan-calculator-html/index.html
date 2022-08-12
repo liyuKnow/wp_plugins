@@ -28,15 +28,15 @@
                 <div class="inputs">
                     <div class="group">
                         <label for="" class="label">Loan Amount <span class="red">*</span></label>
-                        <input type="text" class="input" name="loan-amount" id="loan-amount" value="500,000 Br">
+                        <input type="text" class="input" name="loan-amount" id="loan-amount" placeholder="500,000 Br">
                     </div>
                     <div class="group">
                         <label for="" class="label">Interest Rate <span class="red">*</span></label>
-                        <input type="text" class="input" name="interest-rate" id="interest-rate" value="15%">
+                        <input type="text" class="input" name="interest-rate" id="interest-rate" placeholder="15%">
                     </div>
                     <div class="group">
                         <label for="" class="label">Loan Term in Months<span class="red">*</span></label>
-                        <input type="text" class="input" name="loan-term" id="loan-term" value="60">
+                        <input type="text" class="input" name="loan-term" id="loan-term" placeholder="60">
                     </div>
                 </div>        
             </div>
@@ -44,16 +44,16 @@
                 <div class="results">
                     <div class="top">
                         <h1 class="top-title">Monthly Payment</h1>
-                        <p class="top-amount gradient-text">11,894.97 Br</p>
+                        <p class="top-amount gradient-text" id="monthly_payment"></p>
                     </div>
                     <div class="bottom">
                         <div class="bt-left">
                             <p class="bt-label">Total Interest</p>
-                            <p class="bt-amount">1,895.97 Br</p>
+                            <p class="bt-amount" id="total-interest"></p>
                         </div>
                         <div class="bt-right">
                             <p class="bt-label">Total Principal & Interests</p>
-                            <p class="bt-amount">500,000 Br</p>
+                            <p class="bt-amount" id="total-principal-interest"></p>
                         </div>
                     </div>
                 </div> 

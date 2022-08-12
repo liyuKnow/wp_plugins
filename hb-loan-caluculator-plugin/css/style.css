@@ -1,56 +1,169 @@
-.container {
-    width: 100%;
-    height: 100vh;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-stretch: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(89.73deg, #4A176D 21.2%, #00B0AD 94.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.red {
+    color: #ff0000;
+}
+
+
+.lc-container {
+    max-width: 95%;
+    padding-top: 20px;
     margin: 0 auto;
-    padding: 20px;
+}
+
+/* Top section */
+
+.lc-header {
     display: flex;
 }
 
-.left {
+.hdr-left {
+    flex: 1;
+    text-align: left;
+    margin-right: 45px;
+}
+
+.hdr-right {
     flex: 1;
 }
 
-/* target a class within a class  */
-.left .form-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.left .input {
-    width: 100%;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.lc-header .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.3;
     margin-bottom: 10px;
-    padding: 0 10px;
+    letter-spacing: 0em;
+    color: #4A176D;
+    padding: 0px;
 }
 
-.right {
+.lc-header .description {
+    text-align: left;
+    font-style: initial;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: 0em;
+    color: #4A176D;
+    padding: 0px;
+}
+
+/* Bottom Section */
+.lc-calculator {
+    display: flex;
+}
+
+.cal-left {
     flex: 1;
 }
 
-.right .banner {
-    width: 100%;
-    height: 100%;
-    background-image: url(https://www.hb-loan-calculator.com/wp-content/uploads/2019/05/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.right .banner .text {
-    width: 100%;
-    height: 100%;
+.cal-left .inputs .group {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.cal-left .inputs .label {
+    font-style: normal;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.cal-left .inputs .input {
+    max-width: 100%;
+    min-height: 40px;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 17px;
+    line-height: 32px;
+    color: #4e4e4e;
+}
+
+.cal-left .inputs .input:focus {
+    outline: none;
+}
+
+.cal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: left;
+}
+
+.cal-right .results {
+    width: 100%;
+    background-color: #efefef;
+    border-radius: 15px;
+    padding: 25px 50px;
+}
+
+.cal-right .results .top {
+    padding: 25px 0px;
+}
+
+.cal-right .results .top .top-title {
+    font-size: 24px;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.cal-right .results .top .top-amount {
+    font-size: 54px;
+    font-style: normal;
+    margin: 15px 0;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.cal-right .results .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    color: #fff;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bt-left,
+.bt-right {
+    flex: 1;
+}
+
+.cal-right .bottom .bt-label {
+    font-style: normal;
+    font-size: 17px;
+    color: #4e4e4e;
+    margin: 0 0 32px;
+}
+
+.cal-right .bottom .bt-amount {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 0;
+    color: #4A176D;
 }
